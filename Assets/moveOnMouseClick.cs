@@ -26,7 +26,7 @@ public class moveOnMouseClick : MonoBehaviour {
 	private Vector3 destinationPosition;		// The destination Point
 	private float destinationDistance;			// The distance between myTransform and destinationPosition
 
-	private float moveSpeed = 10.0f;						// The Speed the character will move
+	public float moveSpeed;						// The Speed the character will move
 
 
 
