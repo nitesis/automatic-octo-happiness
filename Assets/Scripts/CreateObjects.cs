@@ -21,8 +21,13 @@ public class CreateObjects : MonoBehaviour {
         for (int i = 0; i < 10; i++)
         {
             GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            capsule.transform.position = new Vector3(i * 1.0f, i * 0.0f, h * 1.0f);
-        }
+				capsule.transform.position = new Vector3(Random.value * 100.0f, 40.0f, Random.value * (-20.0f));
+//			capsule.transform.position = new Vector3(100.0f * Random.value, 100.0f * Random.value, 100.0f * Random.value);
+//			transform.localScale += new Vector3(10.0f, 10.0f, 10.0f);
+//				Component rotate = gameObject.AddComponent("Rotate") as Component;
+				capsule.AddComponent<Rotate>();
+//				capsule.AddComponent<new Color(Random.value *12, i, h )>();
+		}
     }
 
     }
